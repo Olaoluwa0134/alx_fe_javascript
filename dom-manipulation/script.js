@@ -22,7 +22,7 @@ function displayRandomQuote() {
   const quoteDisplay = document.getElementById("showRandomQuote");
 
   quoteDisplay.style.display = "block";
-  quoteDisplay.textContent = getRandomItem(quotes).text;
+  quoteDisplay.innerHTML = getRandomItem(quotes).text;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
