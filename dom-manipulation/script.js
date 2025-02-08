@@ -16,8 +16,6 @@ function createAddQuoteForm() {
       <input id="newQuoteText" type="text" placeholder="Enter a new quote" /><br /><br />
       <input id="newQuoteCategory" type="text" placeholder="Enter quote category" /><br /><br />
       <button id="addQuoteButton">Add Quote</button><br /><br />
-      <button id="exportQuotes">Export Quotes</button>
-      <input type="file" id="importFile" accept=".json" /><br /><br />
       <div id="showRandomQuote"></div>
     </div>
   `;
