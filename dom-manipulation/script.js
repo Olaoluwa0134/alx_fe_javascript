@@ -19,7 +19,7 @@ function addQuote() {
 }
 
 function displayRandomQuote() {
-  const quoteDisplay = document.getElementById("quoteDisplay");
+  const quoteDisplay = document.getElementById("showRandomQuote");
 
   quoteDisplay.style.display = "block";
   quoteDisplay.textContent = getRandomItem(quotes).text;
