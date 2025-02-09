@@ -8,12 +8,6 @@ function saveQuotes() {
   localStorage.setItem("quotes", JSON.stringify(quotes));
 }
 
-<<<<<<< HEAD
-// Function to populate the category filter dropdown
-function populateCategories() {
-  const categoryFilter = document.getElementById("categoryFilter");
-  categoryFilter.innerHTML = '<option value="all">All Categories</option>';
-=======
 // Function to create the add quote form
 function createAddQuoteForm() {
   const addDiv = document.createElement("div");
@@ -27,7 +21,6 @@ function createAddQuoteForm() {
       <div id="showRandomQuote"></div>
     </div>
   `;
->>>>>>> parent of dc99e8a (task2)
 
   const categories = [...new Set(quotes.map((q) => q.category))];
   categories.forEach((category) => {
