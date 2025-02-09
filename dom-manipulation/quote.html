@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+      }
+      .quote-container {
+        margin-top: 20px;
+      }
+      .quote-item {
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      button {
+        cursor: pointer;
+        padding: 5px 10px;
+        background-color: rgb(35, 35, 254);
+        color: #ffffff;
+        border: 1px solid;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="color: rgb(35, 35, 254)">Quote Manager</h2>
+    <label for="author">Author:</label>
+    <input type="text" id="author" name="author" /><br /><br />
+
+    <label for="quote">Quote:</label>
+    <input type="text" id="quote" name="quote" /><br /><br />
+
+    <button id="submit">Add Quote</button>
+
+    <h3 style="color: rgb(35, 35, 254)">Stored Quotes</h3>
+    <div id="quoteContainer" class="quote-container"></div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
