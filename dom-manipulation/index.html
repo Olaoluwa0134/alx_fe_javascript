@@ -30,7 +30,6 @@
         border: 1px solid;
         border-radius: 5px;
       }
-
       #showRandomQuote {
         display: none;
         width: 80%;
@@ -43,12 +42,23 @@
   </head>
   <body>
     <h1>Dynamic Quote Generator</h1>
-    <h3>Add New Quote</h3>
+    
+    <h3>Filter Quotes by Category</h3>
+    <select id="categoryFilter" onchange="filterQuotes()">
+      <option value="all">All Categories</option>
+    </select>
 
-    <button id="newQuote" click="">Show New Quote</button>
-    <div id="showRandomQuote"></div>
+    <h3>Add New Quote</h3>
+    <input type="text" id="newQuoteText" placeholder="Enter a quote" />
+    <input type="text" id="newQuoteCategory" placeholder="Enter category" />
+    <button onclick="addQuote()">Add Quote</button>
+
+    <h3>Quotes</h3>
+    <div id="quoteContainer" class="quote-container"></div>
+
     <button id="exportQuotes">Export Quotes</button>
     <input type="file" id="importFile" accept=".json" /><br /><br />
+    
     <script src="script.js"></script>
   </body>
 </html>
